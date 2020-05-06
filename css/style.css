@@ -1,6 +1,44 @@
 /* GENERAL RULES */
+body {
+  color: #031c4e;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.ms_light-blue {
+  color: #006aff; /* special light blue color*/
+}
+
+.ms_btn-100 {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-weight: 600;
+  border: none;
+  background-color: #579aff;
+  color: #fff;;
+  border-radius: 5px;
+}
+
+.ms_btn-100.ms_btn-google {
+  background-color: #fff;
+  background-image: url('../img/g+logo.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 1% 50%;
+  color: #333;
+  box-shadow: 2px 2px 5px #55555585;
+}
+
+/*=========*/
 /* SECTION */
+
+.ms_section {
+  padding: 50px 0;
+}
 
 /*==============*/
 /* BEGIN HEADER */
@@ -29,17 +67,17 @@
   text-transform: capitalize;
   font-size: 15px;
   padding: 10px;
-  color: #0069ff;
-  border: 1px solid #0069ff;
+  color: #579aff;
+  border: 1px solid #579aff;
   border-radius: 5px;
   transition: all .3s ease-in-out;
 }
 
 .ms_navbar a.ms_sign-btn:hover {
   text-decoration: none;
-  background-color: #0069ff;
+  background-color: #579aff;
   color: #fff;
-  border: 1px solid #0069ff;
+  border: 1px solid #579aff;
 }
 .ms_burger-menu {
   font-size: 20px;
@@ -47,14 +85,70 @@
 }
 
 /* jumbotron */
-
 .ms_jumbo {
   margin-top: 70px;
-  height: 400px;
   background-image: url(../img/ms-jumbo.jpg);
   background-size: cover;
   background-position: center;
 }
 
+/* jumbo teaser*/
+.ms_jumbo .ms_teaser {
+  color: #fff;
+}
+
+.ms_jumbo .ms_teaser h1 {
+  font-size: 3em;
+}
+
+.ms_jumbo .ms_teaser p {
+  font-size: 1.5em;
+  color: #ffffffb0;
+}
+
+/* jumbo deploy app form */
+.ms_deploy-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.ms_deploy-form h3 {
+  font-size: 2em;
+}
+
+.ms_deploy-form input[type="email"],
+.ms_deploy-form input[type="password"] {
+  padding: 10px 5px;
+  height: auto;
+}
 /* END HEADER */
 /*============*/
+
+/*====== SM ======*/
+/* MEDIA QUERY SM */
+@media all and (min-width:768px) {
+
+  .ms_jumbo .ms_teaser h1 {
+    font-size: 3.5em;
+  }
+
+  .ms_jumbo .ms_teaser p {
+    font-size: 1.6em;
+  }
+
+}
+
+/*==== MD =====*/
+/* MEDIA QUERY */
+
+@media all and (min-width:992px) {
+  .ms_jumbo .ms_teaser h1 {
+    font-size: 4.5em;
+  }
+
+  .ms_jumbo .ms_teaser p {
+    font-size: 1.7em;
+  }
+
+}
