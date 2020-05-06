@@ -1,3 +1,4 @@
+/*===============*/
 /* GENERAL RULES */
 body {
   color: #031c4e;
@@ -6,6 +7,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin: 20px 0;
+  color:#031b4e;
+}
+
+
+ul {
+  list-style: none;
 }
 
 .ms_light-blue {
@@ -35,10 +42,35 @@ h1, h2, h3, h4, h5, h6 {
 
 /*=========*/
 /* SECTION */
-
 .ms_section {
   padding: 50px 0;
 }
+
+.ms_section-grey {
+  background-color: #f3f5f9;
+}
+
+.ms_section-white {
+  background-color: #fff;
+}
+
+.ms_section-grad-blue {
+  background: -webkit-linear-gradient(#001e9a, #0047c5);
+}
+
+.ms_section a {
+  color: #579aff;
+  font-size: 1.5em;
+}
+
+.ms_section .ms_intro {
+  text-align: center;
+}
+
+.ms_section h2 {
+  font-size: 2em;
+}
+
 
 /*==============*/
 /* BEGIN HEADER */
@@ -99,6 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ms_jumbo .ms_teaser h1 {
   font-size: 3em;
+  color: inherit;
 }
 
 .ms_jumbo .ms_teaser p {
@@ -125,9 +158,44 @@ h1, h2, h3, h4, h5, h6 {
 /* END HEADER */
 /*============*/
 
+/*============*/
+/* BEGIN MAIN */
+
+/* section customers */
+.ms_customers h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.ms_customers ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ms_customers li {
+  display: inline-block;
+  width: 45%;
+  padding: 0 10px;
+}
+
+.customers-logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+
+
+/* END MAIN */
+/*==========*/
+
+
 /*====== SM ======*/
 /* MEDIA QUERY SM */
 @media all and (min-width:768px) {
+  .ms_section a {
+    color: #579aff;
+    font-size: 1.4em;
+  }
 
   .ms_jumbo .ms_teaser h1 {
     font-size: 3.5em;
@@ -135,6 +203,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .ms_jumbo .ms_teaser p {
     font-size: 1.6em;
+  }
+
+  .ms_customers li {
+    width: 16%;
   }
 
 }
