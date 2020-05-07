@@ -7,13 +7,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin: 20px 0;
-  color:#031b4e;
 }
-
 
 ul {
   list-style: none;
   padding: 0;
+}
+
+footer {
+  background-color: #031c4e;
+  color:#fff;
 }
 
 .ms_light-blue {
@@ -47,17 +50,17 @@ ul {
   padding: 50px 0;
 }
 
-.ms_section-grey {
+.ms_section.ms_section-grey {
   background-color: #f3f5f9;
 }
 
-.ms_section-grad-blue {
-  background: -webkit-linear-gradient(#001e9a, #0047c5);
+.ms_section.ms_section-grad-blue {
+  color: #fff;
+  background: linear-gradient(#0047c5, #001e9a);
 }
 
 .ms_section a {
   color: #579aff;
-  font-size: 1.2em;
 }
 
 .ms_section h2 {
@@ -66,19 +69,21 @@ ul {
 
 .ms_section p {
   font-size: 1.3em;
-  color: #031c4ea8;
   line-height: 1.6em;
+  opacity: .7;
 }
 
 .ms_section .ms_intro {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .ms_section .ms_desc-box {
   padding-bottom: 40px;
 }
-.ms_section .ms_intro p {
-  margin-bottom: 50px;
+
+.ms_opacity-70 {
+  opacity: .7;
 }
 
 /*==============*/
@@ -118,7 +123,6 @@ ul {
   text-decoration: none;
   background-color: #579aff;
   color: #fff;
-  border: 1px solid #579aff;
 }
 .ms_burger-menu {
   font-size: 20px;
@@ -145,7 +149,6 @@ ul {
 
 .ms_jumbo .ms_teaser p {
   font-size: 1.5em;
-  color: #ffffffb0;
 }
 
 /* jumbo deploy app form */
@@ -174,7 +177,6 @@ ul {
 .ms_customers h2 {
   font-size: 1em;
   text-transform: uppercase;
-  color: #031c4ea8;
 }
 
 .ms_customers ul {
@@ -228,7 +230,11 @@ ul {
 .ms_carousel p.ms_slider-desc {
   margin: 30px 0 50px;
   font-size: 1.1em;
-  color: #031c4e;
+}
+
+
+.ms_carousel .ms_slder-count-box {
+  margin: 10px 0;
 }
 
 .ms_carousel .ms_slider-count {
@@ -244,6 +250,96 @@ ul {
   background-color: #579aff;
 }
 
+/* data centers section */
+.ms_data-centers table {
+  width: 100%;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.ms_data-centers table a {
+  color: #00d7d2;
+}
+
+.ms_data-centers tbody tr {
+  border-bottom: 1px solid #fff;
+}
+
+.ms_data-centers tbody tr:last-child {
+  border-bottom: none;
+}
+
+.ms_data-centers tbody td {
+  padding: 10px;
+}
+
+.ms_data-centers tbody td:nth-child(1) {
+  font-weight: 600;
+}
+
+.ms_data-centers tbody td:nth-child(2) {
+  opacity: .5;
+}
+
+.ms_data-centers tbody td:nth-child(3) {
+  text-align: right;
+}
+
+/* Dev-team opinion Section */
+.ms_dev-team-opinion .ms_opinion-box {
+  padding: 5% 0;
+  background-color: #fff;
+}
+
+.ms_dev-team-opinion .ms_opinion-box img {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.ms_dev-team-opinion .ms_opinion-box p {
+  font-size: 1.5em;
+}
+
+/* Create account section */
+.ms_create-acc-btn {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #006aff;
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* footer */
+.ms_footer .ms_credits img.ms_small-logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.ms_footer .ms_credits span.small {
+  opacity: .5;
+}
+
+.ms_footer .ms_socials a {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.ms_footer .ms_footer-link-list ul>li:first-child {
+font-size: 1.5em;
+padding-top: 0;
+}
+
+.ms_footer-link-list ul>li {
+  padding: 10px 0;
+}
+
+.ms_footer-link-list ul>li a {
+  color: #fff;
+  opacity: .7;
+}
 
 /* END MAIN */
 /*==========*/
@@ -255,7 +351,6 @@ ul {
 
   .ms_section a {
     color: #579aff;
-    font-size: 1.6em;
   }
 
   .ms_section h2 {
@@ -263,7 +358,7 @@ ul {
   }
 
   .ms_section p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .ms_jumbo .ms_teaser h1 {
@@ -275,7 +370,7 @@ ul {
   }
 
   .ms_customers li {
-    width: 16%;
+    width: calc((100%/6) - 5px);
   }
 
 }
@@ -292,17 +387,8 @@ ul {
     font-size: 1.5em;
   }
 
-  .ms_section a {
-    color: #579aff;
-    font-size: 1.4em;
-  }
-
   .ms_section h2 {
       font-size: 2.2em;
-  }
-
-  .ms_section p {
-    font-size: 1.7em;
   }
 
 }
