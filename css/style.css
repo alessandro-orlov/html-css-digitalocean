@@ -60,6 +60,7 @@ footer {
 }
 
 .ms_section a {
+  font-size: 1.2em;
   color: #579aff;
 }
 
@@ -68,8 +69,8 @@ footer {
 }
 
 .ms_section p {
-  font-size: 1.3em;
-  line-height: 1.6em;
+  font-size: 1.2em;
+  line-height: 1.5em;
   opacity: .7;
 }
 
@@ -143,12 +144,12 @@ footer {
 }
 
 .ms_jumbo .ms_teaser h1 {
-  font-size: 3em;
+  font-size: 2em;
   color: inherit;
 }
 
 .ms_jumbo .ms_teaser p {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 /* jumbo deploy app form */
@@ -166,6 +167,11 @@ footer {
 .ms_deploy-form input[type="password"] {
   padding: 10px 5px;
   height: auto;
+}
+
+.ms_deploy-form p.ms_small {
+  font-size: 0.9em;
+  color:#031c4e;
 }
 /* END HEADER */
 /*============*/
@@ -202,7 +208,13 @@ footer {
 
 .ms_deploy-app li {
   border-left: 1px solid #ccc;
-  padding: 15px 10px;
+  padding: 10px;
+}
+
+.ms_deploy-app li a {
+  color: #031c4e;
+  font-size: 1.4em;
+  opacity: .7;
 }
 
 /* Casrousel section */
@@ -228,8 +240,9 @@ footer {
 }
 
 .ms_carousel p.ms_slider-desc {
-  margin: 30px 0 50px;
-  font-size: 1.1em;
+  margin: 30px 0;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 
@@ -253,7 +266,7 @@ footer {
 /* data centers section */
 .ms_data-centers table {
   width: 100%;
-  font-size: 1.2em;
+  font-size: 0.9em;
   margin-bottom: 30px;
 }
 
@@ -297,7 +310,15 @@ footer {
 }
 
 .ms_dev-team-opinion .ms_opinion-box p {
-  font-size: 1.5em;
+  font-size: 1.4em;
+}
+
+.ms_dev-team-opinion .ms_opinion-box h4 {
+  margin-bottom: 5px;
+}
+
+.ms_dev-team-opinion .ms_opinion-box h5 {
+  margin-top: 5px;
 }
 
 /* Create account section */
@@ -310,12 +331,18 @@ footer {
   border: none;
   border-radius: 5px;
 }
+/* END MAIN */
+/*==========*/
 
-
-/* footer */
+/*=============*/
+/* BEGIN FOOTER*/
 .ms_footer .ms_credits img.ms_small-logo {
   width: 50px;
   margin-bottom: 10px;
+}
+
+.ms_footer .ms_credits p {
+  font-size: 1em;
 }
 
 .ms_footer .ms_credits span.small {
@@ -327,21 +354,25 @@ footer {
   font-size: 1.5em;
 }
 
-.ms_footer .ms_footer-link-list ul>li:first-child {
+.ms_footer-link-list {
+  margin-bottom: 30px;
+}
+
+.ms_footer-link-list ul>li:first-child {
 font-size: 1.5em;
 padding-top: 0;
 }
 
 .ms_footer-link-list ul>li {
-  padding: 10px 0;
+  font-size: 1.1em;
+  padding: 5px 0;
 }
 
 .ms_footer-link-list ul>li a {
   color: #fff;
   opacity: .7;
 }
-
-/* END MAIN */
+/* END FOOTER */
 /*==========*/
 
 
@@ -349,6 +380,7 @@ padding-top: 0;
 /* MEDIA QUERY */
 @media all and (min-width:768px) {
 
+  /* SM ms_section */
   .ms_section a {
     color: #579aff;
   }
@@ -358,37 +390,100 @@ padding-top: 0;
   }
 
   .ms_section p {
+    font-size: 1.7em;
+  }
+
+  .ms_section .ms_desc-box p {
     font-size: 1.3em;
   }
 
+  /* SM jumbo teaser*/
   .ms_jumbo .ms_teaser h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
 
   .ms_jumbo .ms_teaser p {
     font-size: 1.6em;
   }
 
+  /* SM Customers section */
   .ms_customers li {
     width: calc((100%/6) - 5px);
   }
 
+  /* SM Deploy app section */
+  .ms_section .ms_desc-box  h3 {
+    font-size: 1.5em;
+  }
+
+  .ms_deploy-app li a {
+    font-size: 1.5em;
+  }
+
+  /* SM Casrousel section */
+  .ms_carousel .ms_slider {
+    width: 60%
+  }
+
+  /* SM data centers section */
+  .ms_data-centers table {
+    font-size: 1.2em;
+  }
+
+  /* SM footer */
+  .ms_footer-link-list ul>li:first-child {
+  font-size: 1.6em;
+  }
+
+  .ms_footer-link-list ul>li {
+    font-size: 1.3em;
+  }
 }
 
 /*==== MD =====*/
 /* MEDIA QUERY */
-
 @media all and (min-width:992px) {
+
+
+  /* SM ms_section */
+  .ms_section a {
+    color: #579aff;
+  }
+
+  .ms_section h2 {
+      font-size: 2.2em;
+  }
+
+  .ms_section p {
+    font-size: 1.6em;
+  }
+
+  .ms_section .ms_desc-box p {
+    font-size: 1.3em;
+  }
+
+  /* MD jumbo teaser*/
   .ms_jumbo .ms_teaser h1 {
     font-size: 4.5em;
   }
 
   .ms_jumbo .ms_teaser p {
+    font-size: 1.7em;
+  }
+
+
+  /* MD Customers section */
+  .ms_customers li {
+    width: calc((100%/6) - 5px);
+  }
+
+  /* MD Deploy app section */
+  .ms_section .ms_desc-box  h3 {
     font-size: 1.5em;
   }
 
-  .ms_section h2 {
-      font-size: 2.2em;
+  .ms_deploy-app li a {
+    font-size: 1.5em;
   }
 
 }
