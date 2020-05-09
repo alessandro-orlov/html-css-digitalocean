@@ -219,28 +219,41 @@ footer {
 
 /* Casrousel section */
 .ms_carousel {
-  position: relative;
+  width: 90%;
+  max-width: 992px;
+  margin: 0 auto;
 }
 
 .ms_carousel .ms_slider {
-  display: inline-block;
-  vertical-align: middle;
-  width: 80%
+  position: relative;
 }
 
-.ms_carousel img {
+.ms_carousel .ms_slider .ms_slider-main {
   width: 100%;
-  vertical-align: middle;
+  margin: 0 auto;
 }
 
-.ms_carousel-arrow {
+.ms_slider-main img {
+  width: 100%;
+}
+
+.ms_slider-arrow {
   font-size: 4em;
-  margin: 0 15px;
+  margin: 0 20px;
   color: #031c4e4f;
-  vertical-align: middle;
+  position: absolute;
+  top: 35%
 }
 
-.ms_carousel-arrow.ms_active {
+.ms_slider-arrow.ms_left-arrow {
+  left:0;
+}
+
+.ms_slider-arrow.ms_right-arrow {
+  right:0;
+}
+
+.ms_slider-arrow.ms_active {
   color: #031c4e;;
 }
 
@@ -250,11 +263,12 @@ footer {
   font-weight: 600;
 }
 
-.ms_carousel .ms_slder-count-box {
+/* carousel - slider count box */
+.ms_carousel .ms_slider-count-box {
   margin: 10px 0;
 }
 
-.ms_carousel .ms_slider-count {
+.ms_slider-count {
   display: inline-block;
   border: 1px solid #579aff;
   border-radius: 50%;
@@ -263,7 +277,7 @@ footer {
   margin: 0 1px;
 }
 
-.ms_carousel .ms_slider-count.ms_active {
+.ms_slider-count.ms_active {
   background-color: #579aff;
 }
 
@@ -304,6 +318,8 @@ footer {
 
 /* Dev-team opinion Section */
 .ms_dev-team-opinion .ms_opinion-box {
+  width: 80%;
+  margin: 0 auto;
   padding: 5% 0;
   background-color: #fff;
 }
@@ -360,11 +376,6 @@ footer {
 
 .ms_footer-link-list {
   margin-bottom: 30px;
-}
-
-.ms_footer-link-list ul>li:first-child {
-font-size: 1.5em;
-padding-top: 0;
 }
 
 .ms_footer-link-list ul>li {
@@ -458,68 +469,33 @@ padding-top: 0;
 @media all and (min-width:768px) {
 
   /* SM ms_section */
-  .ms_section a {
-    color: #579aff;
-  }
-
-  .ms_section h2 {
-      font-size: 2em;
-  }
-
-  .ms_section p {
-    font-size: 1.7em;
-  }
-
-  .ms_section .ms_desc-box p {
-    font-size: 1.3em;
-  }
+  .ms_section a { color: #579aff; }
+  .ms_section h2 { font-size: 2em; }
+  .ms_section p { font-size: 1.7em; }
+  .ms_section .ms_desc-box p { font-size: 1.3em; }
 
   /* SM jumbo teaser*/
-  .ms_jumbo .ms_teaser h1 {
-    font-size: 2.5em;
-  }
-
-  .ms_jumbo .ms_teaser p {
-    font-size: 1.6em;
-  }
+  .ms_jumbo .ms_teaser h1 { font-size: 2.5em; }
+  .ms_jumbo .ms_teaser p { font-size: 1.6em; }
 
   /* SM Customers section */
-  .ms_customers h2 {
-    font-size: 1.4em;
-    text-transform: uppercase;
-  }
-
-  .ms_customers li {
-    width: calc((100%/6) - 5px);
-  }
+  .ms_customers h2 { font-size: 1.4em; }
+  .ms_customers li { width: calc((100%/6) - 5px); }
 
   /* SM Deploy app section */
-  .ms_section .ms_desc-box  h3 {
-    font-size: 1.5em;
-  }
-
-  .ms_deploy-app li a {
-    font-size: 1.5em;
-  }
+  .ms_section .ms_desc-box  h3 { font-size: 1.5em; }
+  .ms_deploy-app li a { font-size: 1.5em; }
 
   /* SM Casrousel section */
-  .ms_carousel .ms_slider {
-    width: 60%
+  .ms_carousel .ms_slider .ms_slider-main {
+    width: 80%;
   }
 
   /* SM data centers section */
-  .ms_data-centers table {
-    font-size: 1.2em;
-  }
+  .ms_data-centers table { font-size: 1.2em; }
 
   /* SM footer */
-  .ms_footer-link-list ul>li:first-child {
-  font-size: 1.6em;
-  }
-
-  .ms_footer-link-list ul>li {
-    font-size: 1.2em;
-  }
+  .ms_footer-link-list ul>li { font-size: 1.1em; }
 }
 
 /*==== MD =====*/
@@ -528,63 +504,28 @@ padding-top: 0;
 
 
   /* SM ms_section */
-  .ms_section a {
-    color: #579aff;
-  }
-
-  .ms_section h2 {
-      font-size: 2.2em;
-  }
-
-  .ms_section p {
-    font-size: 1.6em;
-  }
-
-  .ms_section .ms_desc-box p {
-    font-size: 1.3em;
-  }
+  .ms_section a { color: #579aff; }
+  .ms_section h2 { font-size: 2.2em; }
+  .ms_section p { font-size: 1.6em; }
+  .ms_section .ms_desc-box p { font-size: 1.3em; }
 
   /* MD jumbo teaser*/
-  .ms_jumbo .ms_teaser h1 {
-    font-size: 4.5em;
-  }
-
-  .ms_jumbo .ms_teaser p {
-    font-size: 1.7em;
-  }
+  .ms_jumbo .ms_teaser h1 { font-size: 4.5em; }
+  .ms_jumbo .ms_teaser p { font-size: 1.7em; }
 
   /* MD Customers section */
-  .ms_customers h2 {
-    font-size: 1.5em;
-    text-transform: uppercase;
-  }
-
-  .ms_customers li {
-    width: calc((100%/6) - 5px);
-  }
+  .ms_customers h2 { font-size: 1.5em; }
+  .ms_customers li { width: calc((100%/6) - 5px); }
 
   /* MD Deploy app section */
-  .ms_section .ms_desc-box  h3 {
-    font-size: 1.5em;
-  }
-
-  .ms_deploy-app li a {
-    font-size: 1.5em;
-  }
+  .ms_section .ms_desc-box  h3 { font-size: 1.5em; }
+  .ms_deploy-app li a { font-size: 1.5em; }
 
   /* SM data centers section */
-  .ms_data-centers table {
-    font-size: 1em;
-  }
+  .ms_data-centers table { font-size: 1em; }
 
   /* SM footer */
-  .ms_footer-link-list ul>li:first-child {
-  font-size: 1.4em;
-  }
-
-  .ms_footer-link-list ul>li {
-    font-size: 1em;
-  }
+  .ms_footer-link-list ul>li { font-size: 1em; }
 
   /* BONUS CHATBOT */
   .ms_chat-bot-box {
@@ -594,6 +535,7 @@ padding-top: 0;
   .ms_chatbot {
     position: relative;
     bottom: 0px;
+    right: 15px;
     display: inline-block;
     box-shadow: 2px 3px 20px #0000005e;
   }
